@@ -14,7 +14,7 @@ usage
 package main
 
 import (
-  "github.com/0xAX/notificator"
+  "github.com/jboelter/notificator"
 )
 
 var notify *notificator.Notificator
@@ -26,7 +26,7 @@ func main() {
     AppName:     "My test App",
   })
 
-  notify.Push("title", "text", "/home/user/icon.png")
+  notify.PushWithIcon("title", "text", "/home/user/icon.png")
 }
 ```
 
@@ -43,7 +43,8 @@ contribution
   * Send pull request;
   * Thank you.
 
-author
+authors
 ----------
 
 [@0xAX](https://twitter.com/0xAX)
+joshuaboelter

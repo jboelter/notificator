@@ -1,7 +1,7 @@
 package main
 
 import (
-	"../../notificator"
+	"github.com/jboelter/notificator"
 )
 
 var notify *notificator.Notificator
@@ -13,5 +13,5 @@ func main() {
 		AppName:     "My test App",
 	})
 
-	notify.Push("title", "text", "/home/user/icon.png")
+	notify.PushWithIcon("title", "text", "/home/user/icon.png")
 }
